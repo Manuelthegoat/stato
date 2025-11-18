@@ -6,31 +6,32 @@
   align-items: center;
   padding: 80px 60px;
   box-sizing: border-box;
-  position: relative; /* required for absolute image */
+  position: relative;
   gap: 20px;
+  overflow: hidden;
 }
 
-/* Left part */
 .about-left {
   flex: 1;
+  z-index: 2;
 }
 
 .about-small {
   font-size: 16px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #ffffff80; /* semi-transparent */
+  color: #ffffff80;
 }
 
-/* Right part */
 .about-right {
   flex: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-right: 100px;
-  max-width: 450px;
+  padding-right: 80px;
+  max-width: 500px;
   color: white;
+  z-index: 2;
 }
 
 .about-text {
@@ -39,13 +40,12 @@
 }
 
 .about-text .highlight {
-  color: #FEB808;
+  color: #feb808;
   font-weight: bold;
 }
 
-/* Button */
 .about-btn {
-  background-color: #FEB808;
+  background-color: #feb808;
   border: none;
   color: #092370;
   font-weight: bold;
@@ -61,22 +61,22 @@
   opacity: 0.85;
 }
 
-/* Shape image */
 .about-shape {
   position: absolute;
   right: 0;
-  top: 20px;           /* space above */
-  bottom: 20px;        /* space below */
-  height: auto;        /* let width/height adjust proportionally */
-  max-height: calc(100% - 40px); /* 20px top + 20px bottom */
+  top: 40px;
+  bottom: 40px;
+  max-height: calc(100% - 80px);
   width: auto;
   pointer-events: none;
-  z-index: 0; /* behind content */
-  object-fit: contain; /* keep proportions */
+  z-index: 1;
+  object-fit: contain;
 }
 
+/* ---------------------- */
+/* RESPONSIVE DESKTOP <-> TABLET */
+/* ---------------------- */
 
-/* =================== RESPONSIVE =================== */
 @media (max-width: 1024px) {
   .about-section {
     flex-direction: column;
@@ -84,24 +84,33 @@
     padding: 60px 30px;
   }
 
-  .about-left,
   .about-right {
-    flex: none;
-  }
-
-  .about-right {
+    padding-right: 0;
     max-width: 100%;
   }
 
   .about-text {
+    font-size: 24px;
+  }
+  .about-btn {
+    margin: 0 auto;
+  }
+  .about-shape {
+    display: none !important;
+  }
+}
+
+/* ---------------------- */
+/* MOBILE */
+/* ---------------------- */
+
+@media (max-width: 768px) {
+  .about-text {
     font-size: 18px;
   }
 
-  /* Shape below content on smaller screens */
-  .about-shape {
-    position: relative;
-    height: auto;
-    max-width: 200px;
-    margin-top: 20px;
+  .about-btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }

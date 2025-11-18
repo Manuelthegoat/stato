@@ -1,0 +1,45 @@
+.services-hero {
+  width: 100%;
+  background: #092370;
+  color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.services-title {
+  font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+  margin-bottom: 15px;
+}
+
+.services-text {
+  font-size: 14px;
+      font-family: "Montserrat", sans-serif;
+
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 32px;
+  }
+
+  .services-text {
+    font-size: 16px;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 28px;
+  }
+
+  .services-text {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,169 @@
+.offer-section {
+  width: 100%;
+  padding: 80px 20px 0px 20px;
+  background: #fff;
+}
+
+.offer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.offer-title {
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.offer-subtitle {
+  font-size: 15px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.offer-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+.offer-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.offer-image {
+  flex: 1;
+}
+
+.offer-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.offer-content {
+  flex: 1;
+}
+
+.offer-icon {
+  margin-bottom: 20px;
+}
+
+.offer-icon img {
+  width: 60px;
+  height: auto;
+}
+
+.offer-content-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.offer-content-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+}
+.offer-row.reverse {
+  flex-direction: row-reverse;
+}
+.offer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.offer-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+.check-icon {
+  color: #1351F9;
+  margin-right: 12px;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offer-section {
+    padding: 60px 20px;
+  }
+
+  .offer-title {
+    font-size: 28px;
+  }
+
+  .offer-subtitle {
+    font-size: 16px;
+  }
+
+  .offer-row {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .offer-row.reverse {
+    flex-direction: column;
+  }
+
+  .offer-content-title {
+    font-size: 24px;
+  }
+
+  .offer-content-desc {
+    font-size: 15px;
+  }
+
+  .offer-list li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-section {
+    padding: 50px 15px;
+  }
+
+  .offer-title {
+    font-size: 24px;
+  }
+
+  .offer-subtitle {
+    font-size: 15px;
+  }
+
+  .offer-header {
+    margin-bottom: 40px;
+  }
+  
+
+  .offer-row {
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+
+  .offer-content-title {
+    font-size: 22px;
+  }
+
+  .offer-icon img {
+    width: 50px;
+  }
+}
