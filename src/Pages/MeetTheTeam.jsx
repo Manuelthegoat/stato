@@ -44,10 +44,10 @@ const MeetTheTeam = () => {
             dynamicBullets: true,
           }}
           autoplay={{
-            delay: 2000, 
-            disableOnInteraction: false, 
+            delay: 2000,
+            disableOnInteraction: false,
           }}
-           loop={true} 
+          loop={true}
           modules={[Pagination, Autoplay]}
           className="team-swiper"
         >
@@ -68,11 +68,11 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">JANE SMITH</h3>
-              <p className="team-role">Creative Director</p>
+              <h3 className="team-name">Valerie Aliyu</h3>
+              <p className="team-role">Business Development</p>
               <p className="team-desc">
-                With 8+ years in brand strategy, Philip leads our creative
-                vision with passion and precision.
+                Valerie oversees our operations with sharp attention to detail
+                and a commitment to excellence.
               </p>
             </div>
           </SwiperSlide>
@@ -80,11 +80,11 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">MIKE JOHNSON</h3>
-              <p className="team-role">Marketing Head</p>
+              <h3 className="team-name">Mark Verem</h3>
+              <p className="team-role">Marketing Strategist</p>
               <p className="team-desc">
-                With 8+ years in brand strategy, Philip leads our creative
-                vision with passion and precision.
+                Mark crafts data-driven campaigns that deliver measurable
+                results and exceed expectations.
               </p>
             </div>
           </SwiperSlide>
@@ -92,11 +92,10 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">SARAH WILSON</h3>
-              <p className="team-role">Design Lead</p>
+              <h3 className="team-name">Wachin Akura</h3>
+              <p className="team-role">Brand Designer</p>
               <p className="team-desc">
-                With 8+ years in brand strategy, Philip leads our creative
-                vision with passion and precision.
+                Akura brings ideas to life through thoughtful visuals and purposeful creativity
               </p>
             </div>
           </SwiperSlide>

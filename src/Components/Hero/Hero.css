@@ -1,16 +1,23 @@
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url("../../Assets/heroimg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
-  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Video fills the entire section */
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -2;
 }
 
 .hero-overlay {
@@ -20,6 +27,7 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.45);
+  z-index: -1;
 }
 
 .hero-content {
@@ -44,7 +52,6 @@
 
 /* =================== RESPONSIVE =================== */
 
-/* Tablets */
 @media (max-width: 1024px) {
   .hero-content .hero-title {
     font-size: 50px;
@@ -54,7 +61,6 @@
   }
 }
 
-/* Large phones / small tablets */
 @media (max-width: 768px) {
   .hero-content .hero-title {
     font-size: 38px;
@@ -64,7 +70,6 @@
   }
 }
 
-/* Small phones */
 @media (max-width: 480px) {
   .hero-content .hero-title {
     font-size: 28px;

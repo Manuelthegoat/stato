@@ -8,7 +8,7 @@ const CTA = () => {
       <p className="cta-text">
         Let’s discuss how we can help you achieve your marketing goals and build a brand that stands out.
       </p>
-      <button className="cta-btn">Let's Talk</button>
+      <a href="/contact" className="cta-btn">Let's Talk</a>
     </div>
   )
 }

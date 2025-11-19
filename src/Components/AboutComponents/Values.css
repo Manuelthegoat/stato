@@ -1,0 +1,89 @@
+.values-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.values-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.values-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.values-subtitle {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.value-card {
+  padding: 30px 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  background: #fff;
+  transition: 0.3s ease;
+}
+
+.value-card:hover {
+  border-color: #092370;
+  transform: translateY(-5px);
+}
+
+.value-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.value-card-title {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.value-card-text {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== Responsiveness ===== */
+
+@media (max-width: 992px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values-title {
+    font-size: 30px;
+  }
+
+  .values-subtitle {
+    font-size: 16px;
+  }
+
+  .value-icon {
+    width: 50px;
+  }
+}

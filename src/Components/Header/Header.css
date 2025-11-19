@@ -1,3 +1,4 @@
+/* =================== BASE HEADER =================== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -8,6 +9,7 @@
   background: transparent; 
   z-index: 10;
   box-sizing: border-box;
+  overflow-x: hidden; /* prevent horizontal overflow */
 }
 
 .navbar-left img {
@@ -50,11 +52,13 @@
   opacity: 0.85;
 }
 
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  z-index: 20; /* above mobile menu */
 }
 
 .hamburger span {
@@ -76,42 +80,52 @@
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
+/* =================== MOBILE MENU =================== */
 .mobile-menu {
   display: none;
+  position: fixed; /* fullscreen */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.97); /* almost black */
   flex-direction: column;
-  position: absolute;
-  top: 70px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.95);
-  padding: 20px;
-  border-radius: 10px;
-  gap: 15px;
+  justify-content: center; /* vertical center */
+  align-items: center;
+  gap: 30px;
   text-align: center;
-  transition: 0.3s;
+  z-index: 15;
+  transition: opacity 0.3s, transform 0.3s;
 }
 
 .mobile-menu a,
 .mobile-menu button {
   color: white;
   text-decoration: none;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 24px; /* larger for mobile */
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .mobile-menu button {
   background-color: #1351F9;
   border: none;
-  border-radius: 20px;
-  height: 40px;
-  width: 140px;
-  cursor: pointer;
+  border-radius: 25px;
+  height: 50px;
+  width: 180px;
+  font-size: 18px;
 }
 
 .mobile-menu button:hover {
   opacity: 0.85;
 }
 
-/* =================== OTHER PAGES STYLES =================== */
+/* Show mobile menu when open */
+.mobile-menu.open {
+  display: flex;
+}
+
+/* =================== OTHER PAGES =================== */
 .navbar.other-page {
   background: transparent;
   position: relative;
@@ -130,8 +144,7 @@
 }
 
 .mobile-menu.other-page {
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid #e0e0e0;
+  background: rgba(255, 255, 255, 0.97);
 }
 
 .mobile-menu.other-page a {
@@ -147,40 +160,17 @@
   color: white;
 }
 
-/* =================== RESPONSIVENESS =================== */
-@media (max-width: 900px) {
-  .navbar-center,
-  .navbar-right {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .mobile-menu.open {
-    display: flex;
-  }
-}
-/* =================== SERVICES PAGE (BLUE HEADER) =================== */
-
+/* =================== SERVICES PAGE =================== */
 .navbar.services-page {
   background: #092370 !important;
   position: fixed;
   top: 0;
   left: 0;
-}
-
-.navbar.services-page img {
-  filter: brightness(100%);
+  width: 100%;
 }
 
 .navbar-center.services-page a {
   color: white !important;
-}
-
-.navbar-center.services-page a:hover {
-  opacity: 0.7;
 }
 
 .hamburger.services-page span {
@@ -193,4 +183,16 @@
 
 .mobile-menu.services-page a {
   color: white;
+}
+
+/* =================== RESPONSIVENESS =================== */
+@media (max-width: 900px) {
+  .navbar-center,
+  .navbar-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }

@@ -1,0 +1,50 @@
+.mission-section {
+  width: 100%;
+  padding: 30px 20px;
+  background: #fff;
+}
+
+.mission-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mission-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.mission-text {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+}
+
+.mission-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .mission-title {
+    font-size: 30px;
+  }
+
+  .mission-text {
+    font-size: 16px;
+  }
+
+  .mission-image {
+    max-width: 100%;
+  }
+}

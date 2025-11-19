@@ -19,12 +19,12 @@ const Header = () => {
       `}
     >
       {/* Logo */}
-      <div className="navbar-left">
+      <a href="/" className="navbar-left">
         <img
           src={isHomePage || isServicesPage ? Logo : Logo2}
           alt="Logo"
         />
-      </div>
+      </a>
 
       {/* Navigation Links */}
       <nav
@@ -41,9 +41,9 @@ const Header = () => {
       </nav>
 
       {/* Button */}
-      <div className="navbar-right">
+      <a href="/contact" className="navbar-right">
         <button className={!isHomePage ? "other-page" : ""}>Book a Call</button>
-      </div>
+      </a>
 
       {/* Hamburger Icon */}
       <div
@@ -80,7 +80,7 @@ const Header = () => {
           FAQ
         </a>
 
-        <button onClick={() => setMenuOpen(false)}>Book a Call</button>
+        <a href="/contact"><button onClick={() => setMenuOpen(false)}>Book a Call</button></a>
       </div>
     </header>
   );

@@ -7,19 +7,19 @@ const FAQQ = () => {
   const questions = [
     {
       q: "What services does Stato offer?",
-      a: "We provide branding, digital marketing, content creation, brand strategy, and more to help businesses grow."
+      a: "Stato offers brand strategy, visual identity design, website design, business management, creative direction, and ongoing growth support."
     },
     {
       q: "Where are you based?",
-      a: "Project timelines vary depending on scope, but most branding and marketing projects take 2–8 weeks."
+      a: "We operate remotely and work with brands worldwide"
+    },
+    {
+      q: "How is Stato different from other agencies?",
+      a: "Stato doesn’t just give you a pretty brand. We give you systems, guidelines, templates, workflows, and processes that keep your brand consistent as you scale."
     },
     {
       q: "Who do you typically work with?",
-      a: "Yes! We love working with startups and helping them create strong, memorable brands from day one."
-    },
-    {
-      q: "How do I get started?",
-      a: "Simply contact us or book a call, and our team will walk you through the full process."
+      a: "Stato partner with modern founders, growing businesses, and digital first brands that value strategic branding, clean design, and stronger operational systems."
     }
   ];
 

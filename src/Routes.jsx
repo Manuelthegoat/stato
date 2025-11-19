@@ -5,6 +5,7 @@ import MeetTheTeam from './Pages/MeetTheTeam'
 import Services from './Pages/Services'
 import FAQ from './Pages/FAQ'
 import About from './Pages/About'
+import Contact from './Pages/Contact'
 
 const Routing = () => {
   return (
@@ -15,6 +16,7 @@ const Routing = () => {
             <Route path='/services' element={<Services />} />
             <Route path='/faq' element={<FAQ />} />
             <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
         </Routes>
     </>
   )
