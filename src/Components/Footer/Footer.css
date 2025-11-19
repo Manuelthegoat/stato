@@ -82,7 +82,7 @@
 .footer-bottom {
   padding: 20px 50px;
   background-color: #000;
-  color: #575757;
+  color: #fff;
   width: 100%;
   box-sizing: border-box;
 }
@@ -108,7 +108,7 @@
 }
 
 .footer-bottom-links a {
-  color: #575757;
+  color: #fff;
   text-decoration: none;
   transition: color 0.3s;
 }
