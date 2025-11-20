@@ -74,10 +74,10 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">Valerie Aliyu</h3>
+              <h3 className="team-name">Valentina Aliyu</h3>
               <p className="team-role">Business Development</p>
               <p className="team-desc">
-                Valerie oversees our operations with sharp attention to detail
+                Valentina oversees our operations with sharp attention to detail
                 and a commitment to excellence.
               </p>
             </div>
@@ -110,8 +110,8 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">DAVID BROWN</h3>
-              <p className="team-role">Content Strategist</p>
+              <h3 className="team-name">Hope Emmason</h3>
+              <p className="team-role">Social Media Manager</p>
               <p className="team-desc">
                 With 8+ years in brand strategy, Philip leads our creative
                 vision with passion and precision.

@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh; /* Optional: makes it take full viewport height */
+  min-height: 100vh;
   box-sizing: border-box;
 }
 
@@ -66,6 +66,7 @@
   cursor: pointer;
   font-weight: 500;
   white-space: nowrap;
+  transition: all 0.3s ease;
 }
 
 /* Policy Text */
@@ -101,18 +102,19 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .newsletter {
-    padding: 60px 20px;
+    padding: 60px 20px; /* Reduced from 60px */
     text-align: center;
+    min-height: auto; /* Remove full viewport height on mobile */
   }
   
   .newsletter .signup-title {
     font-size: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 6px; /* Reduced from 8px */
   }
 
   .newsletter .newsletter-subtitle {
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Reduced from 20px */
   }
 
   .newsletter .newsletter-subtitle span {
@@ -121,7 +123,7 @@
 
   .newsletter-desc {
     font-size: 15px;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 20px auto; /* Reduced from 25px */
     padding: 0 20px;
     max-width: 100%;
     box-sizing: border-box;
@@ -138,15 +140,17 @@
     font-size: 15px;
   }
 
+  /* Smaller button on tablet */
   .newsletter-input-wrapper button {
-    padding: 0 18px;
-    font-size: 14px;
+    padding: 0 16px;
+    font-size: 13px;
+    width: 120px;
   }
 
   .newsletter-policy {
     font-size: 11px;
     padding: 0 20px;
-    margin-top: 12px;
+    margin-top: 10px; /* Reduced from 12px */
     max-width: 100%;
   }
 
@@ -159,16 +163,18 @@
 
 @media (max-width: 480px) {
   .newsletter {
-    padding: 50px 15px;
+    padding: 50px 15px; /* Reduced from 50px */
     text-align: center;
   }
   
   .newsletter .signup-title {
     font-size: 20px;
+    margin-bottom: 4px; /* Reduced spacing */
   }
 
   .newsletter .newsletter-subtitle {
     font-size: 24px;
+    margin-bottom: 12px; /* Reduced from default */
   }
 
   .newsletter .newsletter-subtitle span {
@@ -179,6 +185,7 @@
     font-size: 14px;
     line-height: 1.5;
     padding: 0 15px;
+    margin: 0 auto 15px auto; /* Reduced from default */
   }
 
   .newsletter-input-wrapper {
@@ -187,23 +194,54 @@
     width: calc(100% - 30px);
     flex-direction: column;
     border-radius: 8px;
-    gap: 0;
+    gap: 8px;
+    background: transparent;
+    padding: 0;
+    align-items: center;
   }
 
   .newsletter-input-wrapper input {
     padding: 14px 16px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px;
+    background: #d9d9d9;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
   }
 
+  /* Smaller button width only */
   .newsletter-input-wrapper button {
-    padding: 12px 16px;
-    border-radius: 0 0 8px 8px;
-    width: 100%;
+    padding: 12px 30px;
+    border-radius: 8px;
+    width: auto;
+    font-size: 14px;
+    background: black;
+    height: auto;
+    max-width: 200px;
   }
 
   .newsletter-policy {
     font-size: 10px;
     padding: 0 15px;
     max-width: 100%;
+    margin-top: 8px; /* Reduced from 12px */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .newsletter {
+    padding: 25px 10px; /* Even more reduced */
+  }
+  
+  .newsletter-input-wrapper button {
+    padding: 10px 25px;
+    font-size: 13px;
+    max-width: 180px;
+  }
+  
+  .newsletter-input-wrapper input {
+    padding: 14px 16px;
+    font-size: 14px;
   }
 }
