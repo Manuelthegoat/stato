@@ -61,7 +61,7 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={teamImg} alt="team" className="team-image" />
-              <h3 className="team-name">PHILLIP OGIRI</h3>
+              <h3 className="team-name">PHILIP OGIRI</h3>
               <p className="team-role">CEO, Director</p>
               <p className="team-desc">
                 With 8+ years in brand strategy, Philip leads our creative
