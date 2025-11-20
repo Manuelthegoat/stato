@@ -1,24 +1,21 @@
 .team-container {
   width: 100%;
-  padding: 60px 20px;
+  padding: 10px 20px;
   text-align: center;
-  /* background: rgb(243, 243, 243); */
   overflow: hidden;
 }
 
 /* TITLE */
 .team-title {
   font-size: 13px;
-    font-family: "Montserrat", sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   margin-bottom: 8px;
 }
 
 /* SUBTITLE */
 .team-subtitle {
   font-size: 15px;
-    font-family: "Montserrat", sans-serif;
-
+  font-family: "Montserrat", sans-serif;
   color: #575757;
   max-width: 600px;
   margin: 0 auto 30px auto;
@@ -29,15 +26,21 @@
 .team-swiper {
   padding: 10px 5px 40px 5px;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* CARD */
 .team-card {
   background: none;
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border-radius: 12px;
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .team-card:hover {
@@ -52,8 +55,7 @@
   max-width: 260px;
   height: 300px;
   object-fit: cover;
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
 }
 
 /* NAME */
@@ -61,6 +63,8 @@
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 4px;
+  text-align: center;
+  width: 100%;
 }
 
 /* ROLE */
@@ -69,6 +73,8 @@
   color: #c8c8c8;
   margin-bottom: 8px;
   font-weight: 500;
+  text-align: center;
+  width: 100%;
 }
 
 /* DESCRIPTION */
@@ -76,9 +82,9 @@
   font-size: 14px;
   color: #8a8a8a;
   line-height: 1.4;
-  /* max-width: 260px; */
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
+  max-width: 260px;
 }
 
 /* Swiper Pagination */
@@ -124,19 +130,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
+    padding: 15px 5px;
   }
 
   .team-image {
     max-width: 220px;
     height: 260px;
+    margin: 0 auto;
+  }
+
+  .team-name,
+  .team-role,
+  .team-desc {
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
 
   .team-desc {
-    max-width: 230px;
+    max-width: 220px;
   }
 
   .team-swiper {
@@ -157,23 +171,41 @@
   .team-subtitle {
     font-size: 14px;
     margin-bottom: 20px;
+    padding: 0 5px;
   }
 
   .team-card {
-    padding: 8px;
+    padding: 10px 5px;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
   }
 
   .team-image {
     max-width: 200px;
     height: 240px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  .team-name,
+  .team-role,
+  .team-desc {
+    text-align: center;
   }
 
   .team-desc {
-    max-width: 210px;
+    max-width: 200px;
+    font-size: 13px;
+  }
+
+  /* Center Swiper slides on mobile */
+  .team-swiper {
+    padding: 5px 0 35px 0;
+  }
+
+  .team-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

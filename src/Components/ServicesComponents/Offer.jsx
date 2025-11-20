@@ -1,6 +1,6 @@
 import React from "react";
 import "./Offer.css";
-import offerImg from "../../Assets/offerimg.png";
+import offerImg from "../../Assets/workimg.png";
 import offerImg2 from "../../Assets/offerimg2.png";
 import offerImg3 from "../../Assets/offerimg3.png";
 import offerImg4 from "../../Assets/offerimg4.png";

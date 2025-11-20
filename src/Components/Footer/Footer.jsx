@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn,  } from 'react-icons/fa';
 import { FaXTwitter, FaTiktok } from "react-icons/fa6";
-import footerLogo from '../../Assets/footerlogo.png'; // adjust path if needed
+import footerLogo from '../../Assets/stato-logo1.1.png'; // adjust path if needed
 
 const Footer = () => {
   return (

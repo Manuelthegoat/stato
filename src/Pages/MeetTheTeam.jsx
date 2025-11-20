@@ -7,6 +7,7 @@ import "./MeetTheTeam.css";
 
 import teamImg from "../Assets/work.png";
 import Newsletter from "../Components/Newsletter/Newsletter";
+import CTA from "../Components/CTA/CTA";
 
 const MeetTheTeam = () => {
   return (
@@ -20,23 +21,28 @@ const MeetTheTeam = () => {
 
         <Swiper
           spaceBetween={15}
-          slidesPerView={1.2}
+          slidesPerView={1.1} // Changed from 1.2 to 1.1 for better centering
+          centeredSlides={true} // Add this to center the active slide
           breakpoints={{
             640: {
               slidesPerView: 1.5,
               spaceBetween: 15,
+              centeredSlides: false, // Disable centered slides on larger screens
             },
             768: {
               slidesPerView: 2.2,
               spaceBetween: 15,
+              centeredSlides: false,
             },
             1024: {
               slidesPerView: 3.2,
               spaceBetween: 15,
+              centeredSlides: false,
             },
             1200: {
               slidesPerView: 3.5,
               spaceBetween: 15,
+              centeredSlides: false,
             },
           }}
           pagination={{
@@ -95,7 +101,8 @@ const MeetTheTeam = () => {
               <h3 className="team-name">Wachin Akura</h3>
               <p className="team-role">Brand Designer</p>
               <p className="team-desc">
-                Akura brings ideas to life through thoughtful visuals and purposeful creativity
+                Akura brings ideas to life through thoughtful visuals and
+                purposeful creativity
               </p>
             </div>
           </SwiperSlide>
@@ -113,6 +120,7 @@ const MeetTheTeam = () => {
           </SwiperSlide>
         </Swiper>
       </div>
+      <CTA />
       <Newsletter />
     </>
   );

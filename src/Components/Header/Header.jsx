@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import Logo from "../../Assets/logo.png";   // white logo
-import Logo2 from "../../Assets/logo2.png"; // dark logo
+import Logo from "../../Assets/stato-logo1.1.png";   // white logo
+import Logo2 from "../../Assets/stato logo1.png"; // dark logo
 import "./Header.css";
 
 const Header = () => {

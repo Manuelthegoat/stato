@@ -4,6 +4,12 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Optional: makes it take full viewport height */
+  box-sizing: border-box;
 }
 
 .newsletter .signup-title {
@@ -67,6 +73,9 @@
   margin-top: 15px;
   font-size: 12px;
   opacity: 0.7;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Top-right shape */
@@ -93,6 +102,7 @@
 @media (max-width: 768px) {
   .newsletter {
     padding: 60px 20px;
+    text-align: center;
   }
   
   .newsletter .signup-title {
@@ -112,12 +122,15 @@
   .newsletter-desc {
     font-size: 15px;
     margin: 0 auto 25px auto;
-    padding: 0 15px;
+    padding: 0 20px;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .newsletter-input-wrapper {
-    max-width: calc(100% - 40px); /* Added margin on both sides */
-    margin: 0 20px; /* Proper margin to prevent touching edges */
+    max-width: 100%;
+    margin: 0 20px;
+    width: calc(100% - 40px);
   }
 
   .newsletter-input-wrapper input {
@@ -134,6 +147,7 @@
     font-size: 11px;
     padding: 0 20px;
     margin-top: 12px;
+    max-width: 100%;
   }
 
   /* Hide shapes on mobile */
@@ -146,6 +160,7 @@
 @media (max-width: 480px) {
   .newsletter {
     padding: 50px 15px;
+    text-align: center;
   }
   
   .newsletter .signup-title {
@@ -163,11 +178,13 @@
   .newsletter-desc {
     font-size: 14px;
     line-height: 1.5;
+    padding: 0 15px;
   }
 
   .newsletter-input-wrapper {
-    max-width: calc(100% - 50px); /* Consistent margin on small screens */
+    max-width: 100%;
     margin: 0 15px;
+    width: calc(100% - 30px);
     flex-direction: column;
     border-radius: 8px;
     gap: 0;
@@ -187,5 +204,6 @@
   .newsletter-policy {
     font-size: 10px;
     padding: 0 15px;
+    max-width: 100%;
   }
 }
