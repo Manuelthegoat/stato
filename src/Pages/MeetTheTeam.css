@@ -11,7 +11,10 @@
   font-family: "Montserrat", sans-serif;
   margin-bottom: 8px;
 }
-
+.invert {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 /* SUBTITLE */
 .team-subtitle {
   font-size: 15px;
@@ -182,8 +185,8 @@
   }
 
   .team-image {
-    max-width: 200px;
-    height: 240px;
+    max-width: 300px;
+    height: 340px;  
     margin: 0 auto;
   }
 

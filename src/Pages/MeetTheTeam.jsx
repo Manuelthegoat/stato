@@ -6,6 +6,11 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "./MeetTheTeam.css";
 
 import teamImg from "../Assets/work.png";
+import Valentina from "../Assets/valentina.jpg";
+import Akura from "../Assets/akura.jpg";
+import Mark from "../Assets/mark.jpg";
+import Hope from "../Assets/hope.jpg";
+import Philip from "../Assets/phillip.jpg";
 import Newsletter from "../Components/Newsletter/Newsletter";
 import CTA from "../Components/CTA/CTA";
 
@@ -60,7 +65,7 @@ const MeetTheTeam = () => {
           {/* CARD 1 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={teamImg} alt="team" className="team-image" />
+              <img src={Philip} alt="team" className="team-image" />
               <h3 className="team-name">PHILIP OGIRI</h3>
               <p className="team-role">CEO, Director</p>
               <p className="team-desc">
@@ -73,7 +78,7 @@ const MeetTheTeam = () => {
           {/* Duplicate slides for other team members */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={teamImg} alt="team" className="team-image" />
+              <img src={Valentina} alt="team" className="team-image" />
               <h3 className="team-name">Valentina Aliyu</h3>
               <p className="team-role">Business Development</p>
               <p className="team-desc">
@@ -85,7 +90,7 @@ const MeetTheTeam = () => {
 
           <SwiperSlide>
             <div className="team-card">
-              <img src={teamImg} alt="team" className="team-image" />
+              <img src={Mark} alt="team" className="team-image" />
               <h3 className="team-name">Mark Verem</h3>
               <p className="team-role">Marketing Strategist</p>
               <p className="team-desc">
@@ -97,7 +102,7 @@ const MeetTheTeam = () => {
 
           <SwiperSlide>
             <div className="team-card">
-              <img src={teamImg} alt="team" className="team-image" />
+              <img src={Akura} alt="team" className="team-image" />
               <h3 className="team-name">Wachin Akura</h3>
               <p className="team-role">Brand Designer</p>
               <p className="team-desc">
@@ -109,7 +114,7 @@ const MeetTheTeam = () => {
 
           <SwiperSlide>
             <div className="team-card">
-              <img src={teamImg} alt="team" className="team-image" />
+              <img src={Hope} alt="team" className="team-image invert" />
               <h3 className="team-name">Hope Emmason</h3>
               <p className="team-role">Social Media Manager</p>
               <p className="team-desc">
