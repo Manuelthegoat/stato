@@ -55,7 +55,7 @@ const MeetTheTeam = () => {
             dynamicBullets: true,
           }}
           autoplay={{
-            delay: 2000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           loop={true}
@@ -66,7 +66,7 @@ const MeetTheTeam = () => {
           <SwiperSlide>
             <div className="team-card">
               <img src={Philip} alt="team" className="team-image" />
-              <h3 className="team-name">PHILIP OGIRI</h3>
+              <h3 className="team-name">Philip Ogiri</h3>
               <p className="team-role">CEO, Director</p>
               <p className="team-desc">
                 With 8+ years in brand strategy, Philip leads our creative
