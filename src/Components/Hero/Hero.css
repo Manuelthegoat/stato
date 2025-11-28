@@ -76,6 +76,43 @@
   font-size: 22px;
   line-height: 1.5;
 }
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.hero-btn {
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Primary button (yellow) */
+.hero-btn.primary {
+  background-color: #1351F9;
+  color: #fff;
+  cursor: pointer;
+}
+
+.hero-btn.primary:hover {
+  opacity: 0.85;
+}
+
+/* Secondary button (transparent with border) */
+.hero-btn.secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-btn.secondary:hover {
+  background: white;
+  color: #092370;
+}
 
 /* =================== RESPONSIVE =================== */
 
@@ -104,4 +141,75 @@
   .hero-content .hero-text {
     font-size: 16px;
   }
+}
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+.doodle-word {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  z-index: 2;
+}
+
+.doodle-word::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200%;
+  height: 160%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+  pointer-events: none;
+
+  /* ---- SAFE ENCODED SVG ---- */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 140'%3E%3Cpath d='M20 70 C20 20, 180 20, 180 70 C180 120, 20 120, 20 70 M160 40 L170 30 M40 110 L30 120' fill='none' stroke='%23FEB808' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' stroke-dasharray='600' stroke-dashoffset='600'%3E%3Canimate attributeName='stroke-dashoffset' from='600' to='0' dur='1.8s' fill='freeze' begin='0.3s' /%3E%3C/path%3E%3C/svg%3E");
+}
+/* Fade-in + move-up animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to all content children */
+.hero-content > * {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Stagger the animation for better effect */
+.hero-content .hero-title {
+  animation-delay: 0.3s;
+}
+
+.hero-content .doodle-word::after {
+  animation-delay: 0.3s; /* sync doodle with title */
+}
+
+.hero-content .hero-text {
+  animation-delay: 0.6s;
+}
+
+.hero-content .hero-buttons {
+  animation-delay: 0.9s;
+}
+.hero-content.loaded > * {
+  animation-play-state: running;
 }
