@@ -15,7 +15,7 @@ import Newsletter from "../Components/Newsletter/Newsletter";
 import CTA from "../Components/CTA/CTA";
 
 const MeetTheTeam = () => {
-  const teamImages = [Philip, Valentina, Mark, Akura, Hope]; // 5 images
+  const teamImages = [Philip, Valentina, Mark, Akura, Hope];
   const totalImages = teamImages.length;
 
   const [loadedCount, setLoadedCount] = useState(0);
@@ -28,7 +28,6 @@ const MeetTheTeam = () => {
 
   return (
     <>
-      {/* PRELOADER */}
       {!allLoaded && (
         <div className="team-preloader">
           <div className="loader"></div>

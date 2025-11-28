@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+/* global Calendly */
+import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Logo from "../../Assets/stato-logo1.1.png";   // white logo
+import Logo from "../../Assets/stato-logo1.1.png"; // white logo
 import Logo2 from "../../Assets/stato logo1.png"; // dark logo
 import "./Header.css";
 
@@ -11,6 +12,14 @@ const Header = () => {
   const isHomePage = location.pathname === "/";
   const isServicesPage = location.pathname === "/services";
 
+  // Load Calendly script
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <header
       className={`navbar 
@@ -20,10 +29,7 @@ const Header = () => {
     >
       {/* Logo */}
       <a href="/" className="navbar-left">
-        <img
-          src={isHomePage || isServicesPage ? Logo : Logo2}
-          alt="Logo"
-        />
+        <img src={isHomePage || isServicesPage ? Logo : Logo2} alt="Logo" />
       </a>
 
       {/* Navigation Links */}
@@ -41,8 +47,18 @@ const Header = () => {
       </nav>
 
       {/* Button */}
-      <a href="/contact" className="navbar-right">
-        <button className={!isHomePage ? "other-page" : ""}>Book a Call</button>
+      <a className="navbar-right">
+        <button
+          className={!isHomePage ? "other-page" : ""}
+          onClick={(e) => {
+            e.preventDefault();
+            Calendly.initPopupWidget({
+              url: "https://calendly.com/contact-stato/30min",
+            });
+          }}
+        >
+          Book a Call
+        </button>
       </a>
 
       {/* Hamburger Icon */}
@@ -80,7 +96,19 @@ const Header = () => {
           FAQ
         </a>
 
-        <a href="/contact"><button onClick={() => setMenuOpen(false)}>Book a Call</button></a>
+        <a>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setMenuOpen(false);
+              Calendly.initPopupWidget({
+                url: "https://calendly.com/contact-stato/30min",
+              });
+            }}
+          >
+            Book a Call
+          </button>
+        </a>
       </div>
     </header>
   );
