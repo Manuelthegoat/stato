@@ -8,7 +8,7 @@ const Countdown = () => {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   // Countdown logic
-  const targetDate = new Date("2025-12-31T23:59:59");
+  const targetDate = new Date("2025-12-07T23:59:59");
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
