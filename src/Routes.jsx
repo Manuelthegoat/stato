@@ -6,17 +6,21 @@ import Services from './Pages/Services'
 import FAQ from './Pages/FAQ'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Countdown from './Components/CountDown/Countdown'
+import Error from './Pages/Error'
 
 const Routing = () => {
   return (
     <>
         <Routes>
-            <Route path='/' element={<Home />} />
+          <Route path='/' element={<Countdown />} />
+          <Route path='*' element={<Error />} />
+            {/* <Route path='/' element={<Home />} />
             <Route path='/meet-the-team' element={<MeetTheTeam />} />
             <Route path='/services' element={<Services />} />
             <Route path='/faq' element={<FAQ />} />
             <Route path='/about' element={<About />} />
-            <Route path='/contact' element={<Contact />} />
+            <Route path='/contact' element={<Contact />} /> */}
         </Routes>
     </>
   )
