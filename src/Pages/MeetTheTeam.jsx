@@ -10,7 +10,7 @@ import Valentina from "../Assets/valentina.jpg";
 import Akura from "../Assets/akura.jpg";
 import Mark from "../Assets/mark.jpg";
 import Hope from "../Assets/hope.jpg";
-import Philip from "../Assets/phillip.jpg";
+import Philip from "../Assets/phil.jpg";
 import Newsletter from "../Components/Newsletter/Newsletter";
 import CTA from "../Components/CTA/CTA";
 
@@ -76,7 +76,12 @@ const MeetTheTeam = () => {
           {/* CARD 1 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={Philip} onLoad={handleImageLoad} alt="team" className="team-image" />
+              <img
+                src={Philip}
+                onLoad={handleImageLoad}
+                alt="team"
+                className="team-image"
+              />
               <h3 className="team-name">Philip Ogiri</h3>
               <p className="team-role">CEO, Director</p>
               <p className="team-desc">
@@ -89,7 +94,12 @@ const MeetTheTeam = () => {
           {/* CARD 2 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={Valentina} onLoad={handleImageLoad} alt="team" className="team-image" />
+              <img
+                src={Valentina}
+                onLoad={handleImageLoad}
+                alt="team"
+                className="team-image"
+              />
               <h3 className="team-name">Valentina Aliyu</h3>
               <p className="team-role">Business Development</p>
               <p className="team-desc">
@@ -102,7 +112,12 @@ const MeetTheTeam = () => {
           {/* CARD 3 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={Mark} onLoad={handleImageLoad} alt="team" className="team-image" />
+              <img
+                src={Mark}
+                onLoad={handleImageLoad}
+                alt="team"
+                className="team-image"
+              />
               <h3 className="team-name">Mark Verem</h3>
               <p className="team-role">Marketing Strategist</p>
               <p className="team-desc">
@@ -115,12 +130,17 @@ const MeetTheTeam = () => {
           {/* CARD 4 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={Akura} onLoad={handleImageLoad} alt="team" className="team-image" />
+              <img
+                src={Akura}
+                onLoad={handleImageLoad}
+                alt="team"
+                className="team-image"
+              />
               <h3 className="team-name">Wachin Akura</h3>
               <p className="team-role">Brand Designer</p>
               <p className="team-desc">
-                Akura brings ideas to life through thoughtful visuals and
-                purposeful creativity
+                Blending bold concepts with refined execution, Akura shapes our
+                creative direction with vision and discipline.
               </p>
             </div>
           </SwiperSlide>
@@ -128,12 +148,17 @@ const MeetTheTeam = () => {
           {/* CARD 5 */}
           <SwiperSlide>
             <div className="team-card">
-              <img src={Hope} onLoad={handleImageLoad} alt="team" className="team-image invert" />
+              <img
+                src={Hope}
+                onLoad={handleImageLoad}
+                alt="team"
+                className="team-image invert"
+              />
               <h3 className="team-name">Hope Emmason</h3>
               <p className="team-role">Social Media Manager</p>
               <p className="team-desc">
-                With 8+ years in brand strategy, Philip leads our creative
-                vision with passion and precision.
+                With a sharp eye for trends and community behavior, Hope drives
+                our social media presence with clarity and consistency.
               </p>
             </div>
           </SwiperSlide>
