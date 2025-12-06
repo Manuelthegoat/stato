@@ -10,9 +10,9 @@ import Routing from "./Routes";
 const App = () => {
   return (
     <>
-      <Header />
+     {/* <Header />*/}
       <Routing />
-      <Footer />
+    {/*<Footer />*/}
     </>
   );
 };
