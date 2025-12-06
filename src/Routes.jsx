@@ -16,11 +16,11 @@ const Routing = () => {
         {/* <Route path='/' element={<Countdown />} /> */}
         <Route path="*" element={<Error />} />
         <Route path="/" element={<Countdown />} />
-        <Route path="/meet-the-team" element={<MeetTheTeam />} />
+      {/* <Route path="/meet-the-team" element={<MeetTheTeam />} />
         <Route path="/services" element={<Services />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact />} />*/}
       </Routes>
     </>
   );
