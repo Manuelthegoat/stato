@@ -24,19 +24,19 @@ const Footer = () => {
           <div className="footer-column">
             <h4>Services</h4>
             <ul>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Visual Identity</a></li>
-              <li><a href="#">Digital Marketing</a></li>
-              <li><a href="#">Content Creation</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/services">Visual Identity</a></li>
+              <li><a href="/services">Digital Marketing</a></li>
+              <li><a href="/services">Content Creation</a></li>
             </ul>
           </div>
           <div className="footer-column">
             <h4>Company</h4>
             <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Work</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="services">Our Work</a></li>
+              <li><a href="/contact">Careers</a></li>
+              <li><a href="contact">Contact</a></li>
             </ul>
           </div>
           <div className="footer-column">
