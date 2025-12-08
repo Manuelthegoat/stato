@@ -137,7 +137,7 @@ const MeetTheTeam = () => {
                 className="team-image"
               />
               <h3 className="team-name">Wachin Akura</h3>
-              <p className="team-role">Brand Designer</p>
+              <p className="team-role">Creative Director</p>
               <p className="team-desc">
                 Blending bold concepts with refined execution, Akura shapes our
                 creative direction with vision and discipline.
