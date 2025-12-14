@@ -1,4 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Sitemap: https://stato.work/sitemap.xml
-Disallow:
+Allow: /
