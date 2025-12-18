@@ -13,7 +13,7 @@ const HowWeWork = () => {
 
         <div className="hww-list">
           <div className="hww-item">
-            <h3 className="hww-item-title">How We Work</h3>
+            <h3 className="hww-item-title">Discovery</h3>
             <p className="hww-item-text">
               Deep dive into your brand, audience
               <br />

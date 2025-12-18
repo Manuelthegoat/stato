@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="footer-tagline">Elevating brands</p>
           <div className="footer-socials">
             <a href="#" aria-label="Facebook"><FaLinkedinIn /></a>
-            <a href="#" aria-label="Twitter"><FaXTwitter /></a>
+            <a href="https://x.com/statobrand" target='_blank' aria-label="Twitter"><FaXTwitter /></a>
             <a href="https://www.instagram.com/stato.brand" target='_blank' aria-label="Instagram"><FaInstagram /></a>
             <a href="https://www.tiktok.com/@statobrand" target='_blank' aria-label="Tiktok"><FaTiktok /></a>
           </div>
@@ -44,7 +44,7 @@ const Footer = () => {
             <ul>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="https://www.instagram.com/stato.brand" target='_blank'>Instagram</a></li>
-              <li><a href="#">Twitter</a></li>
+              <li><a href="https://x.com/statobrand" target='_blank'>Twitter</a></li>
               <li><a href="https://www.tiktok.com/@statobrand" target='_blank'>Tiktok</a></li>
             </ul>
           </div>
